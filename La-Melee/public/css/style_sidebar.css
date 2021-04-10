@@ -1,0 +1,22 @@
+    /* ====== SIDEBAR_G ======== */
+.sidebar_G {
+    position: absolute;
+    display: flex;
+    width: 14.2%;
+    height: 100vh;
+    background-color: teal;
+    overflow: hidden;
+}
+    /* ==== FIN SIDEBAR_G ====== */
+    /* ====  SIDEBAR_G ========= */
+.sidebar_D {
+    position: absolute;
+    display: flex;
+    width: 14.2%;
+    height: 100vh;
+    right: 0px;
+    background-color: teal;
+    overflow: hidden;
+}
+    /* ==== FIN SIDEBAR_G ====== */
+

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Document</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    
+    <link rel="stylesheet" href="public/css/fixe/style_all.css">
+    <link rel="stylesheet" href="public/css/fixe/style_header.css">
+    <link rel="stylesheet" href="public/css/fixe/style_menu.css">
+    <link rel="stylesheet" href="public/css/style_sidebar.css">
+    <link rel="stylesheet" href="public/css/style_central.css">
+
+    <script src="https://kit.fontawesome.com/0c87a70838.js"></script>
+
+</head>
+
+<body>
+    <div class="contenu">
+        
+        <header>
+            <div class="logo-title">
+                <div class="logo">
+                    <img src="public/img/header/La-Melee.png" width="180" alt="">
+                </div>
+                <div class="melee-title">
+                    <h1>PÉTANQUE LA MÊLÉE</h1>
+                </div>
+            </div>
+        </header>
+
+        <nav>
+            <div class="burger">
+                <span></span>
+            </div>
+            <ul class="niveau1">
+                <li><a href="index.php">Accueil</a></li>
+
+                <li class="sousmenu"><a href="melee.php">Mêlée</a>
+                    <ul class="niveau2">
+                        <li><a href="comite.php">Comité</a></li>
+                        <li><a href="connection_membres.php">Membres</a>
+                            <ul class="niveau3">
+                                <li><a href="statut.php">Membres</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="sousmenu"><a href="historique.php">Historique</a>
+                    <ul class="niveau2">
+                        <li><a href="naissance_historique.php">Naissance</a></li>
+                        <li><a href="fanny.php">Fanny</a></li>
+                        <li><a href="historique_boules.php">Boules</a></li>
+                        <li><a href="fabrication.php">Fabrication</a></li>
+                    </ul>
+                </li>
+
+                <li class="sousmenu"><a href="boulodrome.php">Boulodrome</a>
+                    <ul class="niveau2">
+                        <li class="sousmenu"><a href="concours_boulodrome.php">Concours</a>
+                        <li class="sousmenu"><a>Règlement</a>
+                            <ul class="niveau3">
+                                <li><a href="international.php">International</a></li>
+                                <li><a href="boulodrome.php">Boulodrome</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a href="galerie.php">Galerie</a></li>
+
+                <li class="sousmenu"><a href="liens.php">Liens</a>
+                    <ul class="niveau2">
+                        <li><a href="cantons.php">Cantons</a></li>
+                        <li><a href="pays.php">Pays</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="Sponsors.php">Sponsors</a></li>
+                <li><a href="contact.php">Contact</a></li>
+            </ul>
+
+            <div class="hamburger" id="hamburger">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </nav>
+       
+        <div class="sidebar_G">
+
+        </div>
+
+        <div class="central">
+
+        </div>
+
+        <div class="sidebar_D">
+
+        </div>
+
+        <footer>   
+                <p>
+                    &copy; Copyrigth Pétanque la Mêlée - Tous droits réservé -
+                </p>
+        </footer>
+    
+
+    </div>
+    <script>
+        hamburger.onclick = () => {
+            hamburger.classList.toggle("open");
+            nav_ul.classList.toggle("slide");
+            document.body.classList.toggle("noscroll")
+        }
+
+        onscroll = () => {
+            header.classList.add("shadowHeader");
+            header.classList.add("shadowFooter");
+
+            setTimeout(() => {
+                header.classList.remove("shadowHeader");
+                header.classList.remove("shadowFooter");
+            }, 1000);
+        }
+    </script>
+</body>
+
+</html>

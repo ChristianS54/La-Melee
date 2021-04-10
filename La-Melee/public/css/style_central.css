@@ -1,0 +1,10 @@
+    /* ====== CENTRAL ========= */
+.central {
+    position: absolute;
+    width: 71.2%;
+    height: 100vh;
+    left: 14.4%;
+    background-color: turquoise;
+    overflow: hidden;
+}
+/* === FIN CENTRAL ========= */
